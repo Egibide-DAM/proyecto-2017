@@ -16,7 +16,7 @@ La carpeta [docs](./docs/) contiene el [sitio web](https://egibide-dam.github.io
 - MQTT como protocolo de comunicación para IoT.
 - Mosquitto como broker de mensajes MQTT.
 - Arduino para la aplicación de Photon.
-- PHP para la aplicación Web del Photon.
+- PHP y JavaScript para la aplicación Web del Photon.
 - NodeJS para la aplicación intermediaria entre los mensajes MQTT y la base de datos.
 
 ## Recursos utilizados
