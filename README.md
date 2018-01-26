@@ -21,6 +21,7 @@ La carpeta [docs](./docs/) contiene el [sitio web](https://egibide-dam.github.io
 
 ## Recursos utilizados
 - [StartBootstrap template](https://startbootstrap.com/template-categories/all/)
+- [Bootstrap Slider](https://github.com/seiyria/bootstrap-slider)
 - [PHP CRUD API](https://github.com/mevdschee/php-crud-api)
 - [jQuery](https://jquery.com/)
 - [MorrisJS](https://github.com/morrisjs/morris.js)
@@ -60,6 +61,12 @@ La carpeta [docs](./docs/) contiene el [sitio web](https://egibide-dam.github.io
 2. Especificamos la IP del servidor OpenHAB en la variable `ip_openhab` del fichero `app.js`
 3. Ejecutamos la aplicación: `node app.js`
 
-### Acceder a la aplicación Web
+### Aplicación Web
 1. Accedemos a `http://10.1.103.226/photon/webapp`
 2. **Nota:** En caso de utilizar una IP diferente en el servidor, deberemos especificarla en la URL. También deberemos cambiar la variable `ip` en `photon/webapp/resources/js/grafica.js` y en `photon/webapp/resources/js/admin.js`
+
+### Panel de configuración Web del Photon
+1. Accedemos al panel desde el botón superior derecho 'Admin' de la Web o desde `http://10.1.103.226/photon/webapp/admin.php`.
+2. Opciones disponibles:
+- Estado: nos permite encender o apagar la recogida de datos del Photon.
+- Temperatura: nos permite especificar el rango de temperatura en el cual queremos que se encienda el enchufe. Se encenderá cuando la temperatura ambiente sea menor que la temperatura mínima establecida y se apagará cuando llegue o supere a la temperatura máxima.
