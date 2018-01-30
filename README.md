@@ -14,7 +14,7 @@ Explicación del [proceso](https://github.com/AitorBM/proyecto-2017/blob/master/
    puedes crear una carpeta y solo descargar dicho archivo en ella.
 - ## Instalar [VirtualBox](https://www.virtualbox.org/wiki/Downloads) y su [Extension Pack](https://download.virtualbox.org/virtualbox/5.2.6/Oracle_VM_VirtualBox_Extension_Pack-5.2.6-120293.vbox-extpack).
 - ## Instalar [Vagrant](https://www.vagrantup.com/downloads.html).
-- ## Abir la consola de windows
+- ## Abrir la consola de windows
 >Presiona la tecla de windows + r.<br/>
 >Escribe cmd y presiona enter
  - ## Posicionate en la carpeta clonada de github.
