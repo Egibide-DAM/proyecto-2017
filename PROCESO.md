@@ -40,7 +40,10 @@ $ vagrant ssh
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install npm
-$
+$ sudo apt-get install nodejs
+$ sudo npm install mqtt --no-bin-links
+$ cd ruta
+$ sudo npm init
 $ sudo apt-get clean
 ```
 
@@ -49,7 +52,7 @@ $ sudo apt-get clean
   
 |       ID       |     TOPIC      |       MSG      |   FECHA|
 |----------------|----------------|----------------|----------------|
-|       `1`      |      temp      |       23       |asdfasdfr|
+|       `1`      |photon/temperatura|23.700001 Cº    |2018-01-30 18:06:58|
 |                |                |                | |
 
 - ## Compartir una carpeta para añadir y editar la [web](https://github.com/AitorBM/proyecto-2017/tree/master/C%C3%B3digo/Web) y el [script](https://github.com/AitorBM/proyecto-2017/blob/master/C%C3%B3digo/Web/app_prueba02.js) js.
@@ -76,6 +79,11 @@ $ sudo vagrant init mynewbox
 ```
 - ## Configurar VagrantFile.
 > [Código](https://github.com/AitorBM/proyecto-2017/blob/master/Vagrantfile).
+
+> En esta línea debes poner una dirección ip pública que esté disponible en tu red.
+```sh
+config.vm.network "public_network", ip: "10.1.103.232", netmask: "255.255.0.0"
+```
 - ## Arrancar la Box nueva.
 ```sh
 $ cd ruta
