@@ -25,4 +25,12 @@ Explicación del [proceso](https://github.com/AitorBM/proyecto-2017/blob/master/
  ```sh
  vagrant up
  ```
- 
+ - ## Si en la consola no se ve ningúna inserción reiniciar Photon.
+  > Desde el botón reset.
+  
+  > **Nota** En caso de querer acceder a la máquina Vagrant por ssh ir al VagrantFile y comentar estas tres líneas con una almohadilla:
+  ```sh
+  # config.vm.define "web" do |web|
+		# web.vm.provision "shell", inline: "nodejs /var/www/html/web/app_prueba02.js"
+	 # end
+  ```
