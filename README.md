@@ -17,7 +17,7 @@ Explicación del [proceso](https://github.com/AitorBM/proyecto-2017/blob/master/
 - ## Abrir la consola de windows
 >Presiona la tecla de windows + r.<br/>
 >Escribe cmd y presiona enter
- - ## Posicionate en la carpeta clonada de github.
+ - ## Posicionate en la carpeta que contiene el Vagrantfile.
  ```sh
  cd "ruta"
  ```
