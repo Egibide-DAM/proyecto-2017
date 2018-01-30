@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
 	config.vm.box = "jonaitorserver"
-	config.vm.box_url = "https://www.dropbox.com/s/mhia93a6t7lnud9/29ene2155.box?dl=0"
+	config.vm.box_url = "https://informatika.egibide.org/proyecto9f/29ene2155.box"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -69,7 +69,7 @@ Vagrant.configure("2") do |config|
    
    #config.vm.provision "shell", inline: "sudo nodejs /var/www/html/web/app_prueba02.js"
    
-	#config.vm.define "web" do |web|
-	#	web.vm.provision "shell", inline: "nodejs /var/www/html/web/app_prueba02.js"
-	#end
+	config.vm.define "web" do |web|
+		web.vm.provision "shell", inline: "nodejs /var/www/html/web/app_prueba02.js"
+	end
 end
