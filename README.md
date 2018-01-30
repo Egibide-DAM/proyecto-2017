@@ -43,7 +43,7 @@ La carpeta [docs](./docs/) contiene el [sitio web](https://egibide-dam.github.io
 5. Levantamos la máquina `vagrant up`
 
 ### Configurar Photon
-1. Una vez tengamos nuestro Photon montado, lo configuraremos con nuestro smartphone. Para ello, utilizaremos [esta guía](https://docs.particle.io/guide/getting-started/start/photon/#step-2b-connect-your-photon-to-the-internet-using-your-smartphone).
+1. Con ayuda de [este artículo](https://openhomeautomation.net/cloud-data-logger-particle-photon/), montaremos nuestra placa Photon. Una vez la tengamos lista, la configuraremos con nuestro smartphone. Para ello, utilizaremos [esta guía](https://docs.particle.io/guide/getting-started/start/photon/#step-2b-connect-your-photon-to-the-internet-using-your-smartphone).
 2. Desde [Particle IDE](https://build.particle.io/build/new) importaremos el script Arduino `photon/arduino/photonapp.ino` y lo flashearemos en nuestro dispositivo.
 3. **Nota:** En caso de utilizar una IP diferente en el servidor, deberemos especificarla en la variable `server`.
 
