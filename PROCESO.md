@@ -1,10 +1,3 @@
-Ejemplos
-|----------------------------------------------|
-||
-|[Ejemplo formato .md](https://stackedit.io/app)|
-|[otro](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
-[otro](http://commonmark.org/help/)|
-
 ---
 
 # PROCESO REALIZADO
@@ -13,7 +6,6 @@ Ejemplos
   - Se coloca el Photon en la base de conexiones.
   - Se coloca el sensor y mediante jumper wires se conecta a Photon.
   > **Info** del [montaje](https://learn.adafruit.com/dht/connecting-to-a-dhtxx-sensor).<br/>
-  
   
   `En ésta imagen se puede apreciar como están distribuidas las conexiones de la mini-breadboard.`
   ![Image](https://cdn.sparkfun.com/assets/3/d/f/a/9/518c0b34ce395fea62000002.jpg)
@@ -26,7 +18,7 @@ Ejemplos
 - ## Añadir las librerias:
   > Adafruit_DHT.h, MQTT.h, DHTPIN 2, DHTTYPE DHT22.
 - ## Escibir el código y flashearlo en Photon.
-  > [Código]() para el Photon.
+  > [Código](https://github.com/AitorBM/proyecto-2017/blob/master/C%C3%B3digo/photon.ino) para el Photon.
 - ## Comprobar mediante los led que esta encendido y ejecutando el código correctamente.
   > Verde fijo si está encendido correctamente.
   > Otro led azul parpadeando por cada loop del código.
@@ -51,6 +43,21 @@ $ sudo apt-get install npm
 $
 $ sudo apt-get clean
 ```
+
+- ## Ejecutar el script de SQL para tener la base de datos y la tabla.
+  > [Código](https://github.com/AitorBM/proyecto-2017/blob/master/C%C3%B3digo/bd.sql).
+  
+|       ID       |     TOPIC      |       MSG      |   FECHA|
+|----------------|----------------|----------------|----------------|
+|       `1`      |      temp      |       23       |asdfasdfr|
+|                |                |                | |
+
+- ## Compartir una carpeta para añadir y editar la [web](https://github.com/AitorBM/proyecto-2017/tree/master/C%C3%B3digo/Web) y el [script](https://github.com/AitorBM/proyecto-2017/blob/master/C%C3%B3digo/Web/app_prueba02.js) js.
+> Ya incluido en el VagrantFile.
+  - ### El objetivo es almacenar los datos en BD mediante MQTT.
+  > Usamos un script js modificado que encontramos en este
+  [ejemplo](http://ediy.com.my/blog/item/143-store-messages-from-mosquitto-mqtt-broker-into-sql-database).
+  
 - ## Apagar la máquina.
 ```sh
 $ sudo vagrant halt
@@ -68,16 +75,4 @@ $ sudo vagrant box add mynewbox mynew.box
 $ sudo vagrant init mynewbox
 ```
 - ## Configurar VagrantFile.
-> [Código]().
-- ## Compartir una carpeta para añadir y editar la web y el script js.
-> Ya incluido en el VagrantFile.
-- ## El objetivo es almacenar los datos en BD mediante MQTT.
-  > Usamos un script js modificado que encontramos en este
-  [ejemplo](http://ediy.com.my/blog/item/143-store-messages-from-mosquitto-mqtt-broker-into-sql-database).
-- ## Crear la BD y sus tablas
-  - Script [SQL]()
-  
-|       ID       |     TOPIC      |       MSG      |   FECHA|
-|----------------|----------------|----------------|----------------|
-|       `1`      |      temp      |       23       |asdfasdfr|
-|                |                |                | |
+> [Código](https://github.com/AitorBM/proyecto-2017/blob/master/Vagrantfile).
