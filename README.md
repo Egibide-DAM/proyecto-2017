@@ -25,7 +25,7 @@ Una vez conectado todo adecuadamente y dándole alimentación, hay que instalars
  
 3. Programar una aplicación de medición de temperatura y humedad
 Mediante web particle te da acceso a una manera sencilla de  programar.
-Nuestra aplicacion viene adjunta en el archivo:.	  			
+Nuestra aplicacion viene adjunta en el archivo: ParticleBuil.ino.	  			
 
 4. Crear una web (WampServer)
 Instalar WampServer y luego en su carpeta www añadir la carpeta :web.
