@@ -20,7 +20,7 @@
 - ## Escibir el código y flashearlo en Photon.
   > [Código](https://github.com/AitorBM/proyecto-2017/blob/master/C%C3%B3digo/photon.ino) para el Photon.
   
-  > Debes poner una dirección ip pública que esté disponible en tu red.
+  > Debes poner una dirección ip pública que esté disponible en tu red, que será la del servidor.
 - ## Comprobar mediante los led que esta encendido y ejecutando el código correctamente.
   > Verde fijo si está encendido correctamente.
   > Otro led azul parpadeando por cada loop del código.
@@ -85,7 +85,7 @@ $ sudo vagrant init mynewbox
 - ## Configurar VagrantFile.
 > [Código](https://github.com/AitorBM/proyecto-2017/blob/master/Vagrantfile).
 
-> En esta línea debes poner una dirección ip pública que esté disponible en tu red.
+> En esta línea debes poner la dirección ip pública del servidor.
 ```sh
 config.vm.network "public_network", ip: "10.1.103.232", netmask: "255.255.0.0"
 ```
