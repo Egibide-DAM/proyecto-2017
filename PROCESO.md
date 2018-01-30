@@ -37,10 +37,13 @@ $ sudo vagrant init ubuntu/xenial64
 $ vagrant ssh
 ```
 - ## Instalar programas y servicios necesarios en el servidor.
+  > Seguimos el tutorial además de estos comandos.
+  
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install npm
 $ sudo apt-get install nodejs
+$ sudo npm install msql --save
 $ sudo npm install mqtt --no-bin-links
 $ cd ruta
 $ sudo npm init
