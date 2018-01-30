@@ -1,7 +1,7 @@
 # Proyecto DAM 2017
 
 ## Material
-Photon
+Photon ,
 Adafruit DHT22
 
 ## Preparacion
