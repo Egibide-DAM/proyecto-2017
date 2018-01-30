@@ -45,7 +45,7 @@ void loop() {
 	Serial.print(hi);
 	Serial.println("*C");
 	Serial.println(Time.timeStr());
-	Particle.publish("lecturas", String::format("\Hum(\porc)\ : %4.2f, \ Temp(°C)\ : %4.2f, \ DP(°C)\ : %4.2f, \ HI(°C)\ : %4.2f ", h, t, dp, hi));
+	Particle.publish("lecturas", String::format("\Hum(\porc)\ : %4.2f, \ Temp(Â°C)\ : %4.2f, \ DP(Â°C)\ : %4.2f, \ HI(Â°C)\ : %4.2f ", h, t, dp, hi));
 	String ht=(String)h+" porcentaje de humedad "+","+t+" grados de temperatura";
 	String lecturas=(String)h+","+t;
 	if(client.isConnected()){
