@@ -19,6 +19,7 @@
   > Adafruit_DHT.h, MQTT.h, DHTPIN 2, DHTTYPE DHT22.
 - ## Escibir el código y flashearlo en Photon.
   > [Código](https://github.com/AitorBM/proyecto-2017/blob/master/C%C3%B3digo/photon.ino) para el Photon.
+  
   > Debes poner una dirección ip pública que esté disponible en tu red.
 - ## Comprobar mediante los led que esta encendido y ejecutando el código correctamente.
   > Verde fijo si está encendido correctamente.
