@@ -4,7 +4,7 @@
 
 1. Tener un servidor del mosquitto :
 
-Primero, para poder tener un servidor de mqtt hay que instalar una maquina virtual servidor , en nuestro caso fue ubuntu, en el cual se escriben las siguientes sentencias :
+Primero, para poder tener un servidor de mqtt hay que instalar una maquina virtual servidor , en nuestro caso fue ubuntu-16.04.3-server-amd64, en el cual hay que hacer la instalacion basica y despues se escriben las siguientes sentencias :
 		
 ```bash
 $ sudo apt-get upgrade
@@ -16,8 +16,7 @@ Cuidado con tener la direccion oculta, para lo cual has de poner el adaptador de
 Luego hay que hacer que mosquito se suscriba al topic que enviara el sensor con esta sentencia:
 
 ```bash
-$ sudo mosquitto_sub -v -h 10.1.104.22 -p 1883 -t 'datos'
- 														ip			      puerto    topic
+$ sudo mosquitto_sub -v -h 10.1.104.22 -p 1883 -t 'datos' 										
 ```
 														
 2. Tener la maquina photon instalada (adjuntada foto) y reclamar dispositivo.
@@ -28,10 +27,10 @@ Mediante web particle te da acceso a una manera sencilla de  programar.
 Nuestra aplicacion viene adjunta en el archivo: ParticleBuil.ino.	  			
 
 4. Crear una web (WampServer)
-Instalar WampServer y luego en su carpeta www añadir la carpeta :web.
+Instalar WampServer2.2ephp5.4.3-httpd2.2.22-mysql5.5.24-32b y luego en su carpeta www añadir la carpeta :web.
 
 5. Crear la base de datos( phpmyadmin)		
 Copiar el contenido del archivo sql en SQL y ejecutar.
 
 ## Uso
-Conecta la maquina y entra en la pagina web, en ella primero dale al boton de subscribir y luego mostrar	 														
+Conecta la maquina y entra en la pagina web, en ella primero dale al boton de subscribir y luego mostrar(recargar para actualizar la tabla)	 														
