@@ -1,5 +1,9 @@
 # Proyecto DAM 2017
 
+## Material
+Photon
+Adafruit DHT22
+
 ## Preparacion
 
 1. Tener un servidor del mosquitto :
@@ -24,7 +28,8 @@ Una vez conectado todo adecuadamente y dándole alimentación, hay que instalars
  
 3. Programar una aplicación de medición de temperatura y humedad
 Mediante web particle te da acceso a una manera sencilla de  programar.
-Nuestra aplicacion viene adjunta en el archivo: ParticleBuil.ino.	  			
+Nuestra aplicacion viene adjunta en el archivo: ParticleBuil.ino y añadimos las librerias Adafruit_DHT_Particle(0.0.2)	 
+y MQTT(0.4.23). 			
 
 4. Crear una web (WampServer)
 Instalar WampServer2.2ephp5.4.3-httpd2.2.22-mysql5.5.24-32b y luego en su carpeta www añadir la carpeta :web.
@@ -34,3 +39,13 @@ Copiar el contenido del archivo sql en SQL y ejecutar.
 
 ## Uso
 Conecta la maquina y entra en la pagina web, en ella primero dale al boton de subscribir y luego mostrar(recargar para actualizar la tabla)	 														
+
+## Enlaces de interes
+
+https://www.dineshjoshi.com/2017/07/3-easy-steps-build-wifi-temperature-sensor-esp8266/
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-16-04
+
+https://github.com/bluerhinos/phpMQTT/blob/master/examples/subscribe.php
+
+https://docs.debops.org/en/latest/ansible/roles/debops.mosquitto/
