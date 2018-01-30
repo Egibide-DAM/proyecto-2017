@@ -76,3 +76,9 @@ $ sudo vagrant init mynewbox
 ```
 - ## Configurar VagrantFile.
 > [Código](https://github.com/AitorBM/proyecto-2017/blob/master/Vagrantfile).
+- ## Arrancar la Box nueva.
+```sh
+$ cd ruta
+$ sudo vagrant up
+```
+  > Al tener indicado en el Vagrantfile que se el script se ejecute automáticamente ya estará escuchando.
