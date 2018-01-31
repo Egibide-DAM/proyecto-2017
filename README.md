@@ -57,9 +57,10 @@ La carpeta [docs](./docs/) contiene el [sitio web](https://egibide-dam.github.io
 3. Instalamos las dependencias de la aplicación NodeJS: `cd photon/nodeapp/` y `npm install --no-bin-links`
 
 ### Inicializar la aplicación NodeJS
-1. Cambiamos al directorio de la aplicación `cd photon/nodeapp/`
-2. Especificamos la IP del servidor OpenHAB en la variable `ip_openhab` del fichero `app.js`
-3. Ejecutamos la aplicación: `node app.js`
+1. Entramos por ssh a nuestra máquina virtual Scotch-box `vagrant ssh`
+2. Cambiamos al directorio de la aplicación `cd photon/nodeapp/`
+3. Especificamos la IP del servidor OpenHAB en la variable `ip_openhab` del fichero `app.js`
+4. Ejecutamos la aplicación: `node app.js`
 
 ### Aplicación Web
 1. Accedemos a `http://10.1.103.226/photon/webapp`
